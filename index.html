@@ -1,60 +1,49 @@
-<html>
-	<center>
-	<body>
-	<section>
-		<main>
-			<h1>M@B Inc.</h1>
-			<h2>This is my highly <i>professional</i> business website</h2>
-			<p>Hire us to build <i>professional</i> webservices such as this one<p>
-		<figure>
-		<img src="https://gifimage.net/wp-content/uploads/2017/08/spooky-skeleton-gif-28.gif">
-		<figcaption>skeletons love lasagna</figcaption>
-		</figure>
-	</section>
-	<section>
-	<h3>Top 3 things skeletons hate:</h3>
-	<ol>
-		<ul>meatbags</ul>
-		<ul>dogs</ul>
-		<ul>zombies</u>
-	</ol>
-	</section>
-	<section>
-	<select name="clr" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
-    <br>
-	<option value="white">white
-        <option value="orange">orange
-            <option value="flamingred">fuschia
-                <option value="lightyellow">light yellow
-                    <option value="green">green
-                        <option value="cyan">cyan
-                            <option value="yellow">yellow
-                                <option value="red">red
-                                    <option value="black">black</option>
-	</select>&nbsp;&nbsp;Background Color
-	<br>
-	<select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
-    <br>
-    <option value="black">black
-        <option value="orange">orange
-            <option value="flamingred">fuschia
-                <option value="lightyellow">light yellow
-                    <option value="cyan">cyan
-                        <option value="yellow">yellow
-                            <option value="red">red
-                                <option value="white">white</option>
-	</select>&nbsp;&nbsp;Text Color
-	</section>
-	<section>
-	<h1>Love our work? Rate our site:</h2>
-	<input type="text" name="your email" placeholder="your e-mail address" required>
-	<button type="submit">Submit</button>
-	Age: <input type="number" size="6" name="age" min="18" max="99" value="21"><br>
-	Satisfaction with our site: <input type="range" size="2" name="satisfaction" min="1" max="5" value="3">
-	</section>
-	</center>
-	<div class="container">
-    <div class="left"></div>
-    <div class="right"></div>
-	</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="Richard Johnson" required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Richard@Johnson.com" required /></label>
+        <label for="number" id="number-label">Enter A Number between 1 and 100: <input id="number" name="number" type="number" placeholder="2" min="1" max="100" /></label>
+      </fieldset>
+      <fieldset>
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one option)</option>
+          <option value="1">Select this one</option>
+          <option value="1">Or this one</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="slow"><input id="slow" type="radio" name="death" class="inline"/> Slow and painful</label>
+        <label for="quick"><input id="quick" type="radio" name="death" class="inline"/> Quick and painless</label>
+      </fieldset>
+      <fieldset>
+        <label for="skeletons" name="skeletons">
+          <input id="skeletons" type="checkbox" class="inline" required name="skeletons" value="0"/> I enjoy <a href="https://www.google.com/search?q=skeletons&source=lnms&tbm=isch">pictures of skeletons</a></label>
+          <label for="lasagna" name="lasagna">
+          <input id="lasagna" type="checkbox" class="inline" required name="lasagna" value="1"/> I enjoy <a href="https://www.google.com/search?q=lasagna&source=lnms&tbm=isch">pictures of lasagna</a></label>
+          <label for="coffee" name="lasagna">
+          <input id="coffee" type="checkbox" class="inline" required name="coffee" value="2" /> I enjoy <a href="https://www.google.com/search?q=coffee&source=lnms&tbm=isch">pictures of coffee</a>
+        </label>
+      </fieldset>
+      <fieldset>
+      <label for="requests">Last requests:
+          <textarea id="requests" name="requests" rows="3" cols="30" placeholder="Hurry up..."></textarea>
+      </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+    <img src="https://pa1.narvii.com/6916/4b37605953ecdb5c474e9823e9cf313868598bcar1-600-600_hq.gif"</img>
+  </body>
+  <footer>
+    <p>No copyright intended 2022</p>
+  <footer>
+  </html>
